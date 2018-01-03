@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="Classes.css">
+  <script>
+  function foo() {
+    var x = document.getElementsByClassName('futura');
+    for(var i = 0; i < x.length; i++){
+      x[i].style.display = "none";
+    }
+  }
+  </script>
+  <script>
+  function unhide() {
+    var x = document.getElementsByClassName('futura');
+    for(var i=0;i<x.length; i++){
+      x[i].style.display = "initial";
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div>
+  <button onclick="foo()">Hide elements</button>
+</div>
+<div>
+  <button onclick="unhide()">Unhide</button>
+</div>
+
+  <h2><span class="futura">LONDON</span></h2>
+  <p>London is the capital of England.</p>
+
+  <h2><span class="futura">PARIS</span></h2>
+  <p>Paris is the capital city of France.</p>
+
+  <h2><span class="futura main">WASHINGTON D.C.</span></h2>
+  <p>Paris is the capital city of the United States.</p>
+
+  <a href="Iframes.html">Iframes</a>
+</body>
+</html>

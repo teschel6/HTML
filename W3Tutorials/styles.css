@@ -1,0 +1,115 @@
+@font-face {
+    font-family: futura;
+    src: url('./futura');
+}
+
+body{
+  background: rgb(240,240,240); /*Very Light Gray*/
+  font-family: Helvetica;
+}
+h1{
+  color:white;
+  text-align: center;
+  background-color: MediumSeaGreen;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+p{
+  color:rgb(100,100,100); /*Dark Gray*/
+  font-size: 110%;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+iframe{
+  border: 5px solid DodgerBlue;
+}
+
+td, th{
+  border: 1px solid Gray;
+  text-align: left;
+  padding: 8px;
+}
+
+th{
+  color: white;
+  background-color: DodgerBlue;
+}
+
+tr:nth-child(even) {
+  background-color: lightGray;
+}
+tr:nth-child(odd){
+  background-color: white;
+}
+
+ul{
+  color:rgb(100,100,100); /*Dark Gray*/
+  list-style-type: disc;
+}
+
+ol{
+  color:rgb(100,100,100); /*Dark Gray*/
+}
+
+button{
+  font-family: futura;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #00e677;
+  border-radius: 3em;
+  outline:none;
+  transition: 0.6s;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #00cc69;
+  background-color: #00bfff;
+}
+
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+
+#special_font{
+  font-family: serif;
+}
+
+#special_color{
+  color: blue;
+}
+
+#special_size{
+  font-size: 130%;
+}
+
+#special_border{
+  border: 1px solid red;
+}
+
+#special_padding{
+  border: 1px solid blue;
+  padding-left: 50px;
+}
+
+#special_margin{
+  border: 1px solid blue;
+  margin-left: 75px;
+}
+
+p.error{
+  background-color: yellow;
+  color: red;
+}

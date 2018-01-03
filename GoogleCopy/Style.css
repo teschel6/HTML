@@ -1,0 +1,105 @@
+
+/*Import font*/
+@font-face {
+  font-family: futura;
+  src: url('./futura')
+}
+
+.Title{
+  font-family: Futura;
+  font-size: 550%;
+  text-align: center;
+  margin-top: 175px;
+  margin-bottom: 20px;
+  letter-spacing: -4px;
+  font-weight: lighter;
+}
+
+.button{
+  font-family: Futura;
+  color: gray;
+  background-color: #f4f4f4;
+  padding-left: 20px;
+  margin-left: 3px;
+  padding-right: 20px;
+  margin-right: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button:hover{
+  cursor: pointer;
+  border: 1px solid LightGray;
+  color: #565656;
+  box-shadow: 2px 2px #f8f8f8;
+}
+
+.search_box{
+  text-align: right;
+  border: 1px solid LightGray;
+  padding-left: 225px;
+  padding-right: 225px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 4px 4px #f8f8f8;
+}
+
+img.mic{
+  width: 2%;
+  height: inherit;
+}
+
+.search_Button{
+  font-family: Futura;
+  color: white;
+  background-color: #4286f4;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 11px;
+  box-shadow: 4px 4px #f8f8f8;
+}
+
+.search_Button:hover{
+  cursor: pointer;
+  background-color: #5f97ef
+}
+
+table.bottomBar{
+  background-color: #f4f4f4;
+  border-top: 1px solid LightGray;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+table.topBar{
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+a{
+  font-size: 90%;
+  font-family: Helvetica;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #565656
+}
+
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}

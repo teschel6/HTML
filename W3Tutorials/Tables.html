@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Tables & Lists</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Tables</h1>
+
+<a href="#lists">Lists</a>
+
+<p>An HTML table is defined with the ^table^ tag.<br>
+Each table row is defined with the ^tr^ tag.<br>
+A table header is defined with the ^th^ tag.<br>
+By default, table headings are bold and centered.<br>
+A table data/cell is defined with the ^td^ tag.<br>
+To add a table name, use the ^caption^ tag.</p>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Marge</td>
+    <td>Simpson</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Tom</td>
+    <td>Jackson</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Dick</td>
+    <td>Rodgers</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>Harry</td>
+    <td>Williams</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<br><hr>
+
+<!--Row spanning is also an option-->
+<h2> Spanning column</h2>
+<h3>Cell that spans two columns & Centered Table:</h3>
+<table style="width:70%;" align="center">
+  <caption>Phone Numbers</caption>
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Joe McGee</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+  <tr>
+    <td>Police</td>
+    <td>911</td>
+    <td>55577853</td>
+</table>
+<br><hr>
+
+<p> table - table tag</p>
+<p> tr - table row tag</p>
+<p> th - table header tag</p>
+<p> td - table data tag</p>
+<hr/>
+
+<!--Lists-->
+<h1 id="lists">Lists</h1>
+
+<ul>
+  <li>An unordered list starts with the UL tag</li>
+  <li>Each list item starts with the LI tag.</li>
+  <li>List items will be marked with bullets by default</li>
+  <li>The CSS list-style-type property is used to define list markers</li>
+  <li> Style Types: <br>
+    <ul style="list-style-type: circle">
+      <li>Disc</li>
+      <li>Circle</li>
+      <li>Square</li>
+      <li>None</li>
+    </ul>
+</ul>
+
+<ol>
+  <li> An ordered list starts with the ol tag</li>
+  <li> Each item in the list starts with the li tag </li>
+  <li> The list items will be marked with numbers by default:</li>
+  <li> the type attribute of the ol tag, defines the type of a list item markers</li>
+  <li> List Types:
+    <ol type="a">
+      <li> type="1" - Numbered</li>
+      <li> type="A" - Uppercase Letters</li>
+      <li> type="a" - Lowercase Letters</li>
+      <li> type="I" - Upercase Roman Numerals</li>
+      <li> type="i" - Lowercase Roman Numerals</li>
+    </ol>
+</ol>
+
+<a href="Basics.html">Home</a>
+<a href="Menu.html">Menu List</a>
+<br/>
