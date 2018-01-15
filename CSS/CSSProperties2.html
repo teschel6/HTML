@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS 2</title>
+  <style>
+    h1{
+       padding: 25px 0px;
+       text-align: center;
+       color: white;
+       background-color: MidnightBlue;
+     }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h1>Text Formatting</h1>
+  <p style="color:red;width:300px">color</p><hr>
+  <p style="text-align: center;width:300px">text-align: center</p>
+  <p style="text-align: right;width:300px">text-align: right</p>
+  <p style="text-align: left;width:300px">text-align: left</p>
+  <p>text-align: justify</p>
+  <p style="border:solid;width:300px;text-align:justify;padding: 20px">
+    Von grasplatz tag leuchtete lieblinge mut vergesset sudwesten
+     einfacher. Gelernt zuliebe mi bessern gelehnt am. Harmlos tadelte
+     offnung gefallt en ja. Wu niemand hochmut lustige ofteren ja es.
+      Hoffnungen man dus ordentlich werkstatte jahreszeit hat.
+      Gesprachig knabenhaft nachmittag sie hausdacher von gro.
+      Lattenzaun um aufgespart bescheiden schuttelte
+      flusterton la du leuchtturm.
+  </p>
+  <br><hr><br>
+  <p style="text-decoration: none;">text-decoration: none</p>
+  <p style="text-decoration: overline;">text-decoration: overline</p>
+  <p style="text-decoration: line-through;">text-decoration: line-through</p>
+  <p style="text-decoration: underline;">text-decoration: underline</p>
+  <br><hr><br>
+  <p style="text-transform: uppercase">text-transform: uppercase</p>
+  <p style="text-transform: lowercase">text-transform: lowercase</p>
+  <p style="text-transform: capitalize">text-transform: capitalize</p>
+  <br><hr><br>
+  <p>text-indent:25px;</p>
+  <p style="text-indent:50px; margin-left: 50px">
+    Von grasplatz tag leuchtete lieblinge mut vergesset sudwesten
+     einfacher. Gelernt zuliebe mi bessern gelehnt am. Harmlos tadelte
+     offnung gefallt en ja. Wu niemand hochmut lustige ofteren ja es.
+      Hoffnungen man dus ordentlich werkstatte jahreszeit hat.
+      Gesprachig knabenhaft nachmittag sie hausdacher von gro.
+      Lattenzaun um aufgespart bescheiden schuttelte
+      flusterton la du leuchtturm.
+  </p>
+  <br><hr><br>
+  <p style="letter-spacing: 10px">letter-spacing: 10px</p>
+  <p style="letter-spacing: -2px">letter-spacing: -2px</p>
+  <br><hr><br>
+  <p>line-height: 0.8</p>
+  <p style="line-height: 0.8; width: 300px; border: solid">
+    Hoffnungen man dus ordentlich werkstatte jahreszeit hat.
+    Gesprachig knabenhaft nachmittag sie hausdacher von gro.
+  </p>
+  <p>line-height: 1.8</p>
+  <p style="line-height: 1.8; width: 300px;border:solid">
+    Hoffnungen man dus ordentlich werkstatte jahreszeit hat.
+    Gesprachig knabenhaft nachmittag sie hausdacher von gro.
+  </p>
+  <br><hr><br>
+  <p>word-spacing: 15px;</p>
+  <p style="word-spacing:25px;">
+      Hoffnungen man dus ordentlich werkstatte jahreszeit hat.
+      Gesprachig knabenhaft nachmittag sie hausdacher von gro.
+  </p>
+  <br><hr><br>
+  <h2 style="text-shadow: 3px 2px red">text-shadow: 3px 2px red;</h2>
+    <br><hr><br>
+
+
+
+  <h1>Fonts</h1>
+  <h2>font-family</h2>
+  <p style="font-family:Georgia">Serif</p>
+  <p style="font-family:Arial">Sans-serif</p>
+  <p style="font-family:Courier New">Monospace</p>
+  <br><hr><br>
+  <h2>font-style</h2>
+  <p style="font-style:normal">font-style: normal</p>
+  <p style="font-style:italic">font-style: italic</p>
+  <p style="font-style:oblique">font-style: oblique</p>
+  <br><hr><br>
+  <h2>font-size</h2>
+  <p style="font-size: 2.5em">font-size: 2.5em</p>
+  <p style="font-size: 1.875em">font-size: 1.875em</p>
+  <p style="font-szie: 0.875em">font-size: 0.875em</p>
+  <br><hr><br>
+  <h2>font-weight</h2>
+  <p style="font-weight: normal;">font-weight: normal</p>
+  <p style="font-weight: bold;">font-weight: bold</p>
+
+  <h1>Icons</h1>
+  <a href="http://fontawesome.io/icons/">Font Awesome Library</a>
+  <p>Add the following to use Font Awesome Icons:<br>
+    <code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;</code>
+  </p><br>
+  <div style="font-size:50px">
+    <i class="fa fa-cloud"></i>
+    <i class="fa fa-heart"></i>
+    <i class="fa fa-car"></i>
+    <i class="fa fa-file"></i>
+    <i class="fa fa-bars"></i>
+  </div>
+  <p>*Font Awsome Icons can be styled using CSS</p>
+  <p><i class="fa fa-heart" style="color:red;font-size:100px"></i></p>
+  <br><hr><br>
+  <p>*Other Icon Libraries can be imported as well</p>
+  <p> Bootstrap Icons: <code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;</code></p>
+  <p> Google Icons: <code>&gt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;</code></p>
+  <br><hr><br>
+
+
+  <h1>Links</h1>
+  <p>*links can be styled with any CSS property</p>
+  <pre style="font-size: 150%">
+    a:link - a normal, unvisited link
+    a:visited - a link the user has visited
+    a:hover - a link when the user mouses over it
+    a:active - a link the moment it is clicked
+  </pre>
+  <p>*a:hover MUST come after a:link and a:visited
+  <p>*a:active MUST come after a:hover
+  <hr>
+  <p>*<code>text-decoration: none</code> can remove underline from links</p>
+  <a style="text-decoration: none" href="">Link</a><br>
+
+  <hr><br>
+
+  <a href="CSSProperties3.html">Continued...</a>
+  <div style="margin-bottom:500px;"></div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>More Forms</title>
+</head>
+<body>
+
+  <h1>Different Form Elements</h1>
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Select & Option</legend>
+      <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>textarea</legend>
+      <textarea name="message" rows="10" cols="30">
+      </textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Buttons</legend>
+      <button type="button" onclick="alert('Hello World')">Click Me!</button>
+    </fieldset>
+  </form><br>
+
+  <br><hr><br>
+
+  <form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+  </form>
+
+  <form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+  </form>
+
+  <br><hr><br>
+  <form>
+    Username:<br>
+    <input type="text" name="Username"><br>
+    User Password:<br>
+    <input type="password" name="psw"><br>
+    <input type="submit" value="Login">
+    <input type="reset" value="Clear">
+  </form>
+
+    <br><hr><br>
+
+  <form>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car
+  </form>
+
+  <p>HTML5 added several new input types:</p>
+  <ul>
+    <li>color<br>
+    <form action="/action_page.php">
+        Select your favorite color:
+        <input type="color" name="favcolor" value="#ff0000">
+        <input type="submit">
+    </form>
+    </li>
+    <li>date<br>
+      <form>
+        Birthday:
+        <input type="date" name="bday">
+      </form>
+    </li>
+    <li>email<br>
+      <form>
+        E-mail:
+        <input type="email" name="email">
+      </form>
+    </li>
+    <li>number<br>
+      <form action="/action_page.php">
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+        <input type="submit">
+      </form>
+    </li>
+    <li>range
+      <form action="/action_page.php" method="get">
+        Points:
+        <input type="range" name="points" min="0" max="10">
+        <input type="submit">
+      </form>
+    </li>
+    <li>search<br>
+      <form action="/action_page.php">
+        Search Google:
+        <input type="search" name="googlesearch">
+        <input type="submit">
+      </form>
+    </li>
+    <li>tel<br>
+      <form>
+       Telephone:
+       <input type="tel" name="usrtel">
+     </form>
+    </li>
+    <li>url<br>
+      <form>
+      Add your homepage:
+      <input type="url" name="homepage">
+      </form>
+    </li>
+  </ul>
+
+</body>
+</html>

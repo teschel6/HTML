@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS</title>
+  <style>
+    h1{
+      padding: 25px 0px;
+      text-align: center;
+      color: white;
+      background-color: MidnightBlue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Colors</h1>
+  <p style="background-color:Tomato">background-color</p>
+  <p style="color:DodgerBlue">color</p>
+  <p style="border:2px solid green">border</p>
+  <p> *Colors can Be defined 5 ways: RGB,RGBA,HSL,HSLA,or HEX</p>
+  <p> *(A) provides alpha channel for opacity</p>
+  <br>
+
+  <h1>Backgrounds</h1>
+  <p style="background-image:url('bg.jpg');padding:25px;
+  color:white">background-image</p>
+  <p style="background-image:url('bg.jpg');background-repeat: no-repeat;
+  padding:25px; color:white;)">
+  background-repeat(no-repeat,repeat-x,repeat-y)</p>
+  <p style="background-image:url('bg.jpg');background-repeat: no-repeat;
+   background-position: right top;padding:25px;)">
+   background-position(right,left)(top,right)</p>
+   <p style="background-image:url('bg.jpg');padding:25px;
+   background-attachment:fixed)">background-attachment:fixed</p>
+   <p>*fixed elements have static position when scrolling</p>
+   <pre>background (shorthand property)
+     1.background-color
+     2.background-image
+     3.background-repeat
+     4.background-attachment
+     5.background-position
+   </pre><br>
+
+   <h1>Borders</h1>
+   <h4>border-style</h4>
+   <p style="border-style:dotted">A dotted border.</p>
+   <p style="border-style:dashed">A dashed border.</p>
+   <p style="border-style:solid">A solid border.</p>
+   <p style="border-style:double">A double border.</p>
+   <p style="border-style:groove">A groove border.</p>
+   <p style="border-style:ridge">A ridge border.</p>
+   <p style="border-style:inset">An inset border.</p>
+   <p style="border-style:outset">An outset border.</p>
+   <p style="border-style:none">No border.</p>
+   <p style="border-style:hidden">A hidden border.</p>
+   <p style="border-style:dotted dashed solid double">A mixed border.</p>
+   <br>
+   <p style="border-style:solid;border-width:12px;">border-width</p>
+   <p style="border-style:solid;border-color:red;">border-color</p>
+   <p style="border-right-style:solid;border-width:5px;
+   background-color:lightGray;padding:12px;">border-right-style</p>
+   <p style="border-left-style:solid;border-width:5px;
+   background-color:lightGray;padding:12px;">border-left-style</p>
+   <p style="border-bottom-style:solid;border-width:5px;
+   background-color:lightGray;padding:12px;">border-bottom-style</p>
+   <p style="border-top-style:solid;border-width:5px;
+   background-color:lightGray;padding:12px;">border-top-style</p>
+   <pre>border: (shorthand property)
+     1.border-width
+     2.border-style(required)
+     3.border-color
+   </pre>
+   <p style="border:5px solid green">border</p>
+   <p style="border:2px solid red;border-radius: 12px">border-radius</p>
+
+   <h1>Margins</h1>
+   <p style="margin:30px;background-color:lightGray">margin</p>
+   <p style="margin-top:60px;background-color:lightGray">margin-top</p>
+   <p style="margin-right:100px;background-color:lightGray">margin-right</p>
+   <p style="margin-bottom:60px;background-color:lightGray">margin-bottom</p>
+   <p style="margin-left:100px;background-color:lightGray">margin-left</p>
+   <p>*(shorthand) margin: top left bottom right</p>
+   <p>*(shorthand) margin: (top,bottom) (right,left)</p>
+   <p style="margin:auto;border:3px solid blue;width:30%">margin: auto</p>
+   <div style="margin-left:50px;border:3px solid green;">
+     <p style="margin-left:inherit;border:3px solid red;"
+     >margin-left: inherit;</p>
+   </div>
+
+   <h1>Padding</h1>
+   <p style="padding:30px;border:solid">padding</p>
+   <pre style="font-size:150%">padding: (shorthand)
+     1.padding-top
+     2.padding-right
+     3.padding-bottom
+     4.padding-left
+          or
+     1.padding-top padding-bottom
+     2.padding-right padding-left
+   </pre>
+   <p>*padding is added to the width property of an element</p>
+   <p>*to avoid this use box-sizing</p>
+   <p style="width:300px;padding 50px;box-sizing:border-box;
+   background-color:Yellow;">box-sizing:border-box;</p>
+   <br><br>
+   <h1>Height And Width</h1>
+   <p style="height:64px;width:50%;background-color:lightBlue">
+     height:64px; width:50%</p>
+   <p style="background-color:lightGreen;height: 64px; max-width:500px;">
+     max-width:500px *(resize window)</p>
+   <p style="background-color:lightGray;height: 64px; min-width:800px;
+    text-align:right;">min-width:800px *(resize window)</p>
+   <p>*Width and height properties only resize the content area of an HTML element</p>
+
+
+    <br><h1>The Box Model</h1>
+    <pre style="font-size:150%">
+          Content - The content of the box, where text and images appear
+          Padding - Clears an area around the content. The padding is transparent
+          Border - A border that goes around the padding and content
+          Margin - Clears an area outside the border. The margin is transparent
+
+    </pre>
+   <h1>Outline</h1>
+   <p style="border:2px solid black;outline:MediumSeaGreen solid 15px;
+   padding: 20px;margin: 20px;">outline: MediumSeaGreen solid 10px</p>
+   <p>*An outline is a line that is drawn around elements,
+     OUTSIDE the borders</p>
+   <p>*Syntax of an outline is similar to border</p>
+   <pre style="font-size:150%">
+    outline-style
+    outline-color
+    outline-width
+    outline-offset
+    outline
+  </pre>
+  <br>
+  <a href="CSSProperties2.html" style="margin-bottom:">Continued...</a>
+</body>
+</html>
