@@ -1,0 +1,219 @@
+<!DOCTYPE html> <!--Bootstrap must be HTML-->
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <!--required viewport dimensions-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--import bootstrap from cdn-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .col-sm-4,.col-sm-8{
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+<!--bootstrap requires a container element-->
+<div class="container">
+
+  <h2>Grid</h2>
+  <p> Bootstrap grid can span 12 columns </p>
+  <!--even row-->
+  <div class="row">
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-4">.col-sm-4</div>
+  </div>
+  <!--uneven row-->
+  <div class="row">
+    <div class="col-sm-4">.col-lg-4</div>
+    <div class="col-sm-8">.col-lg-8</div>
+  </div>
+
+  <p>The Bootstrap grid system has four classes:
+  <p>xs,sm,md,lg</p>
+
+
+  <h2>Blockquote</h2>
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, et felis nisl pharetra, libero blandit aliquam, mi eu volutpat adipiscing at scelerisque, sit morbi, ut aliquam nullam praesent proin. Euismod sit eu vel ad non, sagittis quam. Lorem erat perspiciatis integer et ante viverra, vitae condimentum, nulla harum erat lectus cursus nec, eu pellentesque ac ligula. Turpis quisque, aenean vitae a odio nullam, molestie sed sed maecenas mauris, ut donec dapibus. Nam risus tortor gravida, curae wisi eget aliquet ligula.</p>
+    <footer>A Greek Man</footer>
+  </blockquote>
+
+  <h2>Code Snippets</h2>
+  <p> To make a  snippet in bootstrap use code span:
+    <code>&ltcode&gt snippet... &lt/code&gt</code></p>
+
+  <h2>Multiple Code Lines</h2>
+  <p>For multiple lines of code, use the pre element:</p>
+  <pre>
+    for(int i = 0; i&ltlength&#59;i++){
+      Do some stuff...
+    }
+  </pre>
+
+  <h1>Tables</h1>
+  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>table-striped</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>table-hover</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>img-responsive</h2>
+      <img class="img-responsive" src="bootstrap.jpg" alt="bootstrap.jpg"><br>
+      <p>Responsive image: <code>&ltimg class="img-responsive"
+        src="bootstrap.jpg" alt="bootstrap.jpg"&gt</code></p>
+
+    <div class="container">
+    <div class="page-header">
+    <h1>Example Page Header</h1>
+    </div>
+      <p>This is some text.</p>
+      <p>This is also text.</p>
+      <p><code>.page-header</code></p>
+    </div>
+
+    <div class="container">
+      <h2>Wells</h2>
+      <p>Wells adds a rounded border around an element with a gray background color and some padding:</p>
+      <div class="well well-sm"><code>.well .well-sm</code></div>
+      <div class="well"><code>.well</code></div>
+    <div class="well well-lg"><code>.well .well-lg</code></div>
+
+    <h2>Alerts</h2>
+    <div class="alert alert-danger alert-dismissible fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>This is an alert!</strong> you can close it
+    </div>
+
+    <h2>Button Styles</h2>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <h2>Button sizes</h2>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary btn-md">Medium</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+    <p>Four different sizes of buttons are available:
+      <code>.btn-lg</code> , <code>.btn-md</code> ,
+      <code>.btn-sm</code> , <code>.btn-xs</code></p>
+
+    <h2>Button Group</h2>
+    <p>The .btn-group class creates a button group:</p>
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Orange</button>
+      <button type="button" class="btn btn-primary">Banana</button>
+    </div>
+
+    <h2>dropdown-menu</h2>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Fruit</button>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Apples</a></li>
+        <li><a href="#">Bananas</a></li>
+        <li><a href="#">Oranges</a></li>
+      </ul>
+    </div>
+
+    <h2>Panagation menu</h2>
+    <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
+
+    <h2>Breadcrumb Navigation</h2>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li class="active">Contact</li>
+    </ul>
+
+
+      <br><br><br><br><br>
+
+
+
+</div>
+</html>
